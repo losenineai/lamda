@@ -30,6 +30,11 @@ cert=TEFNREEgU1NMIENFUlRJRklDQVRFIChDTj10ZXN0LFBBU1NXRD1hMWMwZTNlYTcwN2E1NGRlN2E
 # the certificate (for easier memorization).
 ssl-web-credential=password123
 
+# Set Access-Control-Allow-Origin header of firerpa webui
+# and it's apis to allow you embed firerpa's features
+# see https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
+allow_origin=https://example.com
+
 # Setting this option will also disable the LAMDA Python client API.
 # This option should be set only if the device crashes after starting LAMDA,
 # or if you do not need to use the API. This option will also disable
