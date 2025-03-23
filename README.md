@@ -10,6 +10,8 @@
 <img src="https://img.shields.io/badge/root%20require-red.svg?logo=android&labelColor=black" />
 <img src="https://img.shields.io/github/downloads/rev1si0n/lamda/total" />
 <img src="https://img.shields.io/github/v/release/rev1si0n/lamda" />
+<br>
+<a href="https://device-farm.com/doc/模型扩展.html"><img src="https://img.shields.io/badge/Model%20Context%20Protocol%20(MCP)%20READY-000.svg?logo=openai&labelColor=black" /></a>
 </p>
 
 <p align="center"><a href="https://device-farm.com/doc/index.html">使用文档</a> | <a href="https://t.me/lamda_dev">TELEGRAM</a> | <a href="https://qm.qq.com/q/zDaX2a594I">QQ 群组</a> | <a href="https://device-farm.com/doc/版本历史.html">更新历史</a></p>

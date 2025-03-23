@@ -38,5 +38,6 @@ EOL
 else
 DEFAULT_ID_RSA=$CERTIFICATE
 fi
+ssh-add $DEFAULT_ID_RSA >/dev/null 2>&1 || true
 exec ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no \
          -o LogLevel=ERROR -i $DEFAULT_ID_RSA -p $PORT root@$TARGET ${@:2}
