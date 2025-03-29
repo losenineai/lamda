@@ -376,11 +376,12 @@ class ClientSessionMetadataInterceptor(ClientInterceptor):
     def intercept(self, function, request, details):
         metadata = {}
         metadata["version"] = __version__
-        metadata["instance"] = self.session
-        metadata["hostname"] = quote(platform.node())
+        default = (self.session, platform.node())
+        session, name = self.session() if callable(self.session) else default
+        metadata["instance"] = session
+        metadata["hostname"] = quote(name)
         details = details._replace(metadata=metadata.items())
-        res = function(request, details)
-        return res
+        return function(request, details)
 
 
 class GrpcRemoteExceptionInterceptor(ClientInterceptor):

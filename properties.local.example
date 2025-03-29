@@ -52,9 +52,9 @@ enhanced-stealth-mode=false
 # the remote desktop, please set the following configuration:
 touch.backend=system
 
-# If the application fails to open after the service is started,
-# please set this option to true.
-dirtyfix_open_app=false
+# The switch for get_last_activities, default is false and does not intercept.
+# introduced in 8.20
+intercept-intent=false
 
 # Set the log file location (directory must exists)
 logfile=/data/local/tmp/server.log
