@@ -1532,6 +1532,12 @@ class UtilStub(BaseServiceStub):
         req = protos.String(value=name)
         r = self.stub.getProp(req)
         return r.value
+    def server_info(self):
+        """
+        获取服务端ID、版本等信息
+        """
+        r = self.stub.serverInfo(protos.Empty())
+        return r
 
 
 class DebugStub(BaseServiceStub):
@@ -2384,6 +2390,8 @@ class Device(object):
         return self.stub("UiAutomator").remove_watcher(name)
     def device_info(self):
         return self.stub("UiAutomator").device_info()
+    def server_info(self):
+        return self.stub("Util").server_info()
     def __call__(self, **kwargs):
         return self.stub("UiAutomator")(**kwargs)
     # OCR 功能扩展

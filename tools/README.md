@@ -1,1 +1,1 @@
-使用方法请查看 https://device-farm.com/doc/
+Document: https://device-farm.com/doc/

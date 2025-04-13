@@ -63,3 +63,11 @@ message ShowToastRequest {
         string           text   = 1;
         ToastDuration duration  = 2;
 }
+
+message ServerInfoResponse {
+        string         uniqueId = 1;
+        string          version = 2;
+        string     architecture = 3;
+        uint64           uptime = 4;
+        bool             secure = 5;
+}

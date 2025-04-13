@@ -8,7 +8,6 @@
 # ===================================================================
 #
 from lamda.mcp import *
-from lamda.mcp import PromptMessage,GetPromptResult
 from lamda.client import *
 from lamda.utils import getprop
 from lamda.extensions import BaseMcpExtension, to_json_string

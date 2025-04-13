@@ -22,15 +22,15 @@
 <img src="image/claude.gif" alt="Claude" width="95%">
 </p>
 
-<p align="center">FIRERPA is a comprehensive solution in the Android domain, designed to reduce trivial issues in security analysis, application testing, or automation work. It has been tested in production environments on over a thousand device clusters and is stably applied in multiple large-scale systems including automated forensics, cloud platforms, data collection, compliance analysis, and other systems, with commercial-grade software quality and stability. It features full architecture and wide compatibility with Android 6.0-15, requires only root privileges to run normally, and supports emulators, physical devices, cloud phones, WSA (Windows Subsystem for Android™️), RK development boards, and Redroid, as well as most devices running the Android system. It provides a stable solution for mobile RPA and data automation.RetryClaude can make mistakes. Please double-check responses.</p>
+<p align="center">It's a stable and commercial-grade Android automation solution supporting Android 6.0–15 across emulators, real devices, and cloud platforms. It simplifies security analysis and testing tasks, requiring only root access, and is widely used in large-scale systems like forensics and compliance analysis.</p>
 
 <h3><p align="center">Widely Applicable Architecture Design</p></h3>
 
-<p align="center">FIRERPA differs from any other similar software, designed from the outset with consideration for various possible application environments. It can run non-intrusively on most current Android devices, is plug-and-play, has no external dependencies, requires no additional settings, and is natively designed for large-scale business scenarios, making it easy to systematically manage and update. Meanwhile, other software with similar functionality still experiences various issues such as disconnections, instability, poor compatibility, lack of maintenance, and management difficulties.</p>
+<p align="center">Unlike similar tools, it was built for diverse environments from day one. It runs non-intrusively on most Android devices, is plug-and-play with no dependencies or extra setup, and is optimized for large-scale business use. In contrast, other tools often suffer from instability, poor compatibility, and maintenance issues.</p>
 
 <h3><p align="center">Rich Programming Interfaces</p></h3>
 
-<p align="center">Provides up to 160 programming interfaces, allowing you to exercise meticulous control over Android devices. It offers more than a dozen categories of interfaces including command execution, system settings, status, application-related, automation control, proxy, and file interfaces. It also provides a complete Python library package so you can quickly get started. Standardized and stable services and interfaces allow you to control every detail through code without worry, and even enable AI integration, allowing large models to automatically write and execute tasks.</p>
+<p align="center">Offers 160+ stable, categorized APIs—covering commands, system settings, automation, apps, and more—plus a full Python SDK for fast development. It enables precise Android control and seamless AI integration for automated task generation and execution.</p>
 
 <h3><p align="center">Simple and Easy-to-Use Remote Desktop</p></h3>
 

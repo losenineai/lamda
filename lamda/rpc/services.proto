@@ -216,6 +216,8 @@ service Util {
     rpc recordTouch(google.protobuf.Empty) returns (TouchSequence) {}
     rpc performTouch(PerformTouchRequest) returns (Boolean) {}
 
+    rpc serverInfo(google.protobuf.Empty) returns (ServerInfoResponse) {}
+
     rpc reboot(google.protobuf.Empty) returns (Boolean) {}
     rpc beepBeep(google.protobuf.Empty) returns (Boolean) {}
     rpc isCACertificateInstalled(CertifiRequest) returns (Boolean) {}
