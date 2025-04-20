@@ -1,3 +1,9 @@
+8.25
+* 新增 hexedit 命令
+* 彻底修复 Permission Loophole (maybe)
+* 新增设备端 AI 框架 (tflite-runtime)
+* 更新 frida 提升隐藏性
+
 8.22
 * 使用全新 sqlite
 * 远程桌面检视显示当前坐标及RGB
