@@ -30,6 +30,12 @@ With the decline of traditional web interfaces and the rise of intelligent devic
 
 FIRERPA delivers commercial-grade automation capabilities across a wide range of Android versions and devices. It requires only root access, simplifies security analysis and testing, and is already widely used in scenarios such as digital forensics and compliance monitoring. FIRERPA 提供稳定且达到商用级的自动化能力，兼容众多 Android 系统与设备，仅需 Root 权限即可轻松完成安全分析与测试，广泛应用于数字取证与合规监测等场景。
 
+<h3><p align="center">Zero-Intrusion Design.</p></h3>
+<p align="center">零侵入式设计。</p>
+
+FIRERPA ensures complete non-intrusiveness during operation—it does not alter system settings or write to system files, preserving the original environment and ensuring device integrity.
+FIRERPA 保证运行过程完全无侵入，不修改系统设置、不改写系统文件，保留原始环境，设备完整性不受影响。
+
 <h3><p align="center">Designed from the ground up for flexible deployment.</p></h3>
 <p align="center">从零设计，专为灵活性与大规模部署而生。</p>
 
