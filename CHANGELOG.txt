@@ -1,3 +1,9 @@
+8.28
+* 修复 install_local_file
+* 修复 frida 上报 ID 递增
+* 提升内置 tf 推理性能
+* 更新部分第三方模块
+
 8.25
 * 新增 hexedit 命令
 * 彻底修复 Permission Loophole (maybe)

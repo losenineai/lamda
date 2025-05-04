@@ -1319,12 +1319,12 @@ class ApplicationStub(BaseServiceStub):
         req.extras.update(extras)
         r = self.stub.startActivity(req)
         return r.value
-    def install_local_file(self, fpath):
+    def install_local_file(self, fpath, user=0):
         """
         安装设备上的 apk 文件（注意此路径为设备上的 apk 路径）
         """
         req = protos.ApplicationRequest(path=fpath)
-        req.user = self.user
+        req.user = user
         r = self.stub.installFromLocalFile(req)
         return r
     def __call__(self, applicationId, user=0):
@@ -2230,8 +2230,8 @@ class Device(object):
     def file_stat(self, fpath):
         return self.stub("File").file_stat(fpath)
     # 快速调用: Application
-    def install_local_file(self, rpath):
-        return self.stub("Application").install_local_file(rpath)
+    def install_local_file(self, rpath, user=0):
+        return self.stub("Application").install_local_file(rpath, user=user)
     def current_application(self):
         return self.stub("Application").current_application()
     def enumerate_all_pkg_names(self):
