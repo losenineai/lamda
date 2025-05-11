@@ -44,7 +44,11 @@ FIRERPA was built from the ground up to run non-intrusively on most Android devi
 <h3><p align="center">160+ APIs and full Python SDK for rapid development.</p></h3>
 <p align="center">160+ API 配套完整 Python SDK，助力高效开发。</p>
 
-FIRERPA offers over 160 categorized, stable APIs that cover command execution, system configuration, automation flows, and app-level controls. It also provides a full-featured Python SDK for rapid development and seamless AI integration. Developers can easily build intelligent workflows with precise control over Android systems. FIRERPA 提供超过 160 个分类清晰、稳定可靠的接口，涵盖命令执行、系统设置、自动化流程与应用控制等功能，并内置完整的 Python SDK，帮助开发者高效实现与 AI 的无缝集成，构建具备精细控制能力的智能化任务流程。
+FIRERPA offers over 160 categorized, stable APIs that cover command execution, system configuration, automation flows, and app-level controls. It also provides a full-featured Python SDK for rapid development and seamless AI integration. Developers can easily build intelligent workflows with precise control over Android systems. FIRERPA 提供超 160 个分类清晰、稳定可靠的接口，涵盖命令执行、系统设置、自动化流程与应用控制等，并包含完整的 Python SDK，帮助开发者高效实现与 AI 的无缝集成，构建具备精细控制能力的智能化任务流。
+
+<p align="center">
+<img src="image/inspect.png" alt="demo" width="95%">
+</p>
 
 <h3><p align="center">Remote desktop and device control, made simple.</p></h3>
 <p align="center">远程桌面与设备控制，简单直观。</p>

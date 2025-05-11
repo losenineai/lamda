@@ -229,6 +229,7 @@ service Util {
     rpc exit(google.protobuf.Empty) returns (Boolean) {}
     rpc setProp(SetPropRequest) returns (Boolean) {}
     rpc getProp(String) returns (String) {}
+    rpc hexPatch(HexPatchRequest) returns (HexPatchResponse) {}
 }
 
 service File {

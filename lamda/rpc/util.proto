@@ -71,3 +71,22 @@ message ServerInfoResponse {
         uint64           uptime = 4;
         bool             secure = 5;
 }
+
+message HexPatchRequest {
+        string          pattern = 1;
+        string      replacement = 2;
+        string          path    = 3;
+        int32        maxreplace = 4;
+        bool            dryrun  = 5;
+}
+
+message HexPatchItem {
+        string          path  = 1;
+        int32           index = 2;
+        uint64         offset = 3;
+}
+
+message HexPatchResponse {
+        int32           count = 1;
+        repeated HexPatchItem replaces = 2;
+}

@@ -292,8 +292,29 @@ def to_dict(prot):
 
 def Selector(**kwargs):
     """ Selector wrapper """
+    kwargs.pop("fields", None)
     sel = _Selector(**kwargs, fields=kwargs.keys())
     return sel
+
+
+def child_sibling(s, name, **selector):
+    s = copy.deepcopy(s)
+    s.childOrSibling.append(name)
+    s.childOrSiblingSelector.append(Selector(**selector))
+    return s
+
+
+def child(s, **selector):
+    return child_sibling(s, "child", **selector)
+
+
+def sibling(s, **selector):
+    return child_sibling(s, "sibling", **selector)
+
+
+# bind Selector level child sibling
+_Selector.child = child
+_Selector.sibling = sibling
 
 
 class CustomOcrBackend(object):
@@ -422,23 +443,20 @@ class ObjectUiAutomatorOpStub:
                         for k, v in self._selector.items()])
         return "Object: {}".format(selector)
     __repr__ = __str__
-    def _child_sibling(self, name, **selector):
-        s = copy.deepcopy(self._selector)
-        s.setdefault("childOrSibling", [])
-        s.setdefault("childOrSiblingSelector", [])
-        s["childOrSiblingSelector"].append(selector)
-        s["childOrSibling"].append(name)
-        return self.__class__(self.caller, s)
     def child(self, **selector):
         """
         匹配选择器里面的子节点
         """
-        return self._child_sibling("child", **selector)
+        selector = self.selector.child(**selector)
+        s = MessageToDict(selector, preserving_proto_field_name=True)
+        return self.__class__(self.caller, s)
     def sibling(self, **selector):
         """
         匹配选择器的同级节点
         """
-        return self._child_sibling("sibling", **selector)
+        selector = self.selector.sibling(**selector)
+        s = MessageToDict(selector, preserving_proto_field_name=True)
+        return self.__class__(self.caller, s)
     def take_screenshot(self, quality=100):
         """
         对选择器选中元素进行截图
@@ -1538,6 +1556,19 @@ class UtilStub(BaseServiceStub):
         """
         r = self.stub.serverInfo(protos.Empty())
         return r
+    def hex_patch(self, pattern, replacement, path,
+                                        maxreplace=-1,
+                                        dryrun=False):
+        """
+        对设备上的文件进行十六进制字节替换
+        """
+        req = protos.HexPatchRequest()
+        req.pattern     = pattern
+        req.replacement = replacement
+        req.path        = path
+        req.maxreplace  = maxreplace
+        req.dryrun      = dryrun
+        return self.stub.hexPatch(req)
 
 
 class DebugStub(BaseServiceStub):
@@ -2273,6 +2304,11 @@ class Device(object):
         return self.stub("Util").setprop(name, value)
     def getprop(self, name):
         return self.stub("Util").getprop(name)
+    def hex_patch(self, pattern, replacement, path,
+                            maxreplace=-1, dryrun=False):
+        return self.stub("Util").hex_patch(pattern, replacement, path,
+                                    maxreplace=maxreplace,
+                                    dryrun=dryrun)
     # 快速调用: Debug
     def install_adb_pubkey(self, pubkey):
         return self.stub("Debug").install_adb_pubkey(pubkey)

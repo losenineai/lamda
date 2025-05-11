@@ -1,3 +1,9 @@
+8.30
+* 新增二进制补丁接口
+* 支持在 Selector 使用 child、sibling
+* 支持在远程桌面查看界面 XML 树状布局
+* 更新 frida 修复部分问题
+
 8.28
 * 修复 install_local_file
 * 修复 frida 上报 ID 递增
