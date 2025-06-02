@@ -19,7 +19,7 @@
 <h3><p align="center">Most powerful Android automation framework built for the mobile-first era.</p></h3>
 <p align="center">面向移动优先时代的强大 Android 自动化框架。</p>
 
-With the decline of traditional web interfaces and the rise of intelligent devices, automation and data technologies must adapt to the mobile shift. FIRERPA embraces this trend, offering a modern solution purpose-built for Android automation. 随着传统网页的式微与智能设备的崛起，自动化与数据技术迫切需要适应移动化转型。FIRERPA 正是顺应这一趋势而生，为 Android 自动化带来现代化解决方案。
+With the decline of traditional web interfaces and the rise of intelligent devices, automation and data technologies must adapt to the mobile shift. FIRERPA embraces this trend, offering a modern solution purpose-built for Android automation. Lightweight, with no external dependencies, and compatible with any version of the Android operating system. Low-latency remote desktop and audio transmission (under 80ms). Over 160 programming interfaces, covering automation, file I/O, script injection, proxy support, and more. Exceptionally stable, supports distributed deployment, and is easy to monitor and manage. 随着传统网页的式微与智能设备的崛起，自动化与数据技术迫切需要适应移动化转型。FIRERPA 正是顺应这一趋势而生，为 Android 自动化带来现代化解决方案。轻量，无任何外部依赖，可运行于任何版本的安卓系统。低延迟的远程桌面及远程音频传输（小于 80ms）。160+ 编程接口，涵盖自动化及文件读写、脚本注入、代理等等。极致稳定，支持分布式部署，易监控管理。
 
 <p align="center">
 <img src="image/claude.gif" alt="Claude" width="95%">

@@ -1,3 +1,7 @@
+8.35
+* 远程桌面支持实时音频推送
+* 修复 hex_patch 段错误
+
 8.30
 * 新增二进制补丁接口
 * 支持在 Selector 使用 child、sibling
