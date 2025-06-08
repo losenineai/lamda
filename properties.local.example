@@ -47,6 +47,9 @@ disable-client-api=false
 # Use only if necessary (introduced in version 7.65).
 enhanced-stealth-mode=false
 
+# Enhanced automation.
+enhanced-automation=false
+
 # Remote Desktop Touch Fix
 # If there is an offset or no response when you touch the screen on
 # the remote desktop, please set the following configuration:
