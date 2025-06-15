@@ -2480,7 +2480,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     crt = os.environ.get("CERTIFICATE", None)
     port = int(os.environ.get("PORT", 65000))
-    parser.add_argument("-device", type=str, default="localhost",
+    parser.add_argument("-device", type=str, default="127.0.0.1",
                                    help="service ip address")
     parser.add_argument("-port", type=int, default=port,
                                    help="service port")

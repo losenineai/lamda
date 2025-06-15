@@ -19,7 +19,7 @@
 <h3><p align="center">Most powerful Android automation framework built for the mobile-first era.</p></h3>
 <p align="center">面向移动优先时代的强大 Android 自动化框架。</p>
 
-With the decline of traditional web interfaces and the rise of intelligent devices, automation and data technologies must adapt to the mobile shift. FIRERPA embraces this trend, offering a modern solution purpose-built for Android automation. Lightweight, with no external dependencies, and compatible with any version of the Android operating system. Low-latency remote desktop and audio transmission (under 80ms). Over 160 programming interfaces, covering automation, file I/O, script injection, proxy support, and more. Exceptionally stable, supports distributed deployment, and is easy to monitor and manage. 随着传统网页的式微与智能设备的崛起，自动化与数据技术迫切需要适应移动化转型。FIRERPA 正是顺应这一趋势而生，为 Android 自动化带来现代化解决方案。轻量，无任何外部依赖，可运行于任何版本的安卓系统。低延迟的远程桌面及远程音频传输（小于 80ms）。160+ 编程接口，涵盖自动化及文件读写、脚本注入、代理等等。极致稳定，支持分布式部署，易监控管理。
+As traditional web platforms decline and smart devices rise, automation and data technologies must quickly adapt to a mobile-first world. FIRERPA meets this demand by offering a modern solution for Android automation. It is lightweight, has no external dependencies, and runs on any version of Android. It features low-latency remote desktop and audio streaming (<80ms), over 160 programmable control interfaces, exceptional stability, distributed deployment support, and easy monitoring and management. 随着传统网页的式微与智能设备的崛起，自动化与数据技术迫切需要适应移动化转型。FIRERPA 顺应这一趋势，为 Android 自动化带来现代化解决方案。轻量，无任何外部依赖，可运行于任何版本的安卓系统。低延迟的远程桌面及远程音频传输（< 80ms）。160+ 编程控制接口，极致稳定，支持分布式部署，易监控管理。
 
 <p align="center">
 <img src="image/claude.gif" alt="Claude" width="95%">
@@ -58,6 +58,8 @@ FIRERPA comes with a clean, intuitive remote desktop interface, allowing users t
 <p align="center">
 <img src="image/demo.gif" alt="demo" width="95%">
 </p>
+
+Our project is not fully open source. Many industry tools also hide untraceable binaries in large codebases — a form of false advertising we reject. Due to the nature of this field, open-sourcing would raise defense costs and cause unnecessary trouble for both you and us. We choose to keep the tool free and accessible, focused on building the most effective solution. For security, we guarantee no malicious code, no backdoors, and no data collection. You’re free to reverse-engineer and verify its safety however you like. 我们的项目并未完全开源，您使用的很多业内工具其实也没有开源核心部分，他们在大量的代码内隐藏不可溯源的二进制文件，这显然是虚假宣传，我们不会这么向您宣传。我们这样做是由于行业的特殊性，开源意味着要投入更多的对抗成本，这显然会给您以及我们增加很多不必要的麻烦。我们会始终保持工具的免费及开放，我们只为打造最趁手的兵器。对于安全性，我们承诺没有任何恶意代码或后门植入，没有任何数据被收集上传，您可以以任意方式破解逆向分析其安全及隐私性。
 
 <p align="center">Check out real usage examples and developer guides in the documentation.</p>
 <p align="center">欢迎查阅 FIRERPA 使用文档，了解更多实际案例与开发指南。</p>
